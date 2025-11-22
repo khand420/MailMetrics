@@ -1,0 +1,1053 @@
+{
+	"info": {
+		"_postman_id": "72a5a54b-6327-487a-a1c2-c6ebf54af00c",
+		"name": "MailMetrics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38915135"
+	},
+	"item": [
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"KHAND\",\n  \"password\": \"12345\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"KHAND\",\n  \"password\": \"12345\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:25:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "489"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MzY2MzE1MCwiaWF0IjoxNzYzNTc2NzUwLCJqdGkiOiI2NzkyN2IwNTMzZjE0MjRlOGEyOTFiZGFjZjAwYThhZSIsInVzZXJfaWQiOiIxIn0._1L9UTnjPOdMWelysV-2uhzqhodo2tGJIssAUbVy_ok\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTc3MDUwLCJpYXQiOjE3NjM1NzY3NTAsImp0aSI6ImYwNTY2ZDQ2NTE3NzRmY2M4YTA3ZGFiMGU1YjM0ZGJmIiwidXNlcl9pZCI6IjEifQ.jLpg1wbEDcjuPCeGVUpnQ9MmTudnyLNsy4SN1Md7t5o\"\n}"
+				}
+			]
+		},
+		{
+			"name": "token-refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MzY2MzE1MCwiaWF0IjoxNzYzNTc2NzUwLCJqdGkiOiI2NzkyN2IwNTMzZjE0MjRlOGEyOTFiZGFjZjAwYThhZSIsInVzZXJfaWQiOiIxIn0._1L9UTnjPOdMWelysV-2uhzqhodo2tGJIssAUbVy_ok\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "refresh",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MzY2MzE1MCwiaWF0IjoxNzYzNTc2NzUwLCJqdGkiOiI2NzkyN2IwNTMzZjE0MjRlOGEyOTFiZGFjZjAwYThhZSIsInVzZXJfaWQiOiIxIn0._1L9UTnjPOdMWelysV-2uhzqhodo2tGJIssAUbVy_ok\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/token/refresh/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								"refresh",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:38:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "244"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create campaigns",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Black Friday Promo\",\n  \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n  \"status\": \"scheduled\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/campaigns/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"campaigns",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "campaigns",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Black Friday Promo\",\n  \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n  \"status\": \"scheduled\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/campaigns/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"campaigns",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:38:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"Black Friday Promo\",\n    \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n    \"status\": \"scheduled\",\n    \"created_at\": \"2025-11-19T18:38:48.180171Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update campaigns",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"status\": \"in_progress\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/campaigns/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"campaigns",
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update campaigns",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"status\": \"in_progress\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/campaigns/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"campaigns",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:46:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Black Friday Promo\",\n    \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n    \"status\": \"in_progress\",\n    \"created_at\": \"2025-11-19T18:29:36.967354Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get campaigns",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Black Friday Promo\",\n  \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n  \"status\": \"scheduled\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/campaigns/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"campaigns",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Black Friday Promo\",\n  \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n  \"status\": \"scheduled\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/campaigns/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"campaigns",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:41:00 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "424"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Black Friday Promo\",\n        \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n        \"status\": \"scheduled\",\n        \"created_at\": \"2025-11-19T18:29:36.967354Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Black Friday Promo\",\n        \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n        \"status\": \"scheduled\",\n        \"created_at\": \"2025-11-19T18:29:43.806951Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Black Friday Promo\",\n        \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n        \"status\": \"scheduled\",\n        \"created_at\": \"2025-11-19T18:38:48.180171Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "filter campaigns",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Black Friday Promo\",\n  \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n  \"status\": \"scheduled\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/campaigns/?search=scheduled",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"campaigns",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "scheduled"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Black Friday Promo\",\n  \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n  \"status\": \"scheduled\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/campaigns/?search=scheduled",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"campaigns",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "scheduled"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:43:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "424"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Black Friday Promo\",\n        \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n        \"status\": \"scheduled\",\n        \"created_at\": \"2025-11-19T18:29:36.967354Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Black Friday Promo\",\n        \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n        \"status\": \"scheduled\",\n        \"created_at\": \"2025-11-19T18:29:43.806951Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Black Friday Promo\",\n        \"scheduled_time\": \"2025-01-12T10:00:00Z\",\n        \"status\": \"scheduled\",\n        \"created_at\": \"2025-11-19T18:38:48.180171Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add-email-to-campaigns",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"campaign\": 1,\n  \"recipient\": \"test@example.com\",\n  \"subject\": \"Welcome!\",\n  \"body\": \"Hello user!\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/emails/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"emails",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"campaign\": 1,\n  \"recipient\": \"test@example.com\",\n  \"subject\": \"Welcome!\",\n  \"body\": \"Hello user!\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/emails/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"emails",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:50:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"recipient\": \"test@example.com\",\n    \"subject\": \"Welcome!\",\n    \"body\": \"Hello user!\",\n    \"status\": \"pending\",\n    \"sent_at\": null,\n    \"campaign\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "search-email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"campaign\": 1,\n  \"recipient\": \"test@example.com\",\n  \"subject\": \"Welcome!\",\n  \"body\": \"Hello user!\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/emails/?campaign=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"emails",
+						""
+					],
+					"query": [
+						{
+							"key": "campaign",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search-email",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"campaign\": 1,\n  \"recipient\": \"test@example.com\",\n  \"subject\": \"Welcome!\",\n  \"body\": \"Hello user!\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/emails/?campaign=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"emails",
+								""
+							],
+							"query": [
+								{
+									"key": "campaign",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 18:52:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.14.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "259"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"recipient\": \"test@example.com\",\n        \"subject\": \"Welcome!\",\n        \"body\": \"Hello user!\",\n        \"status\": \"pending\",\n        \"sent_at\": null,\n        \"campaign\": 1\n    },\n    {\n        \"id\": 2,\n        \"recipient\": \"test@example.com\",\n        \"subject\": \"Welcome!\",\n        \"body\": \"Hello user!\",\n        \"status\": \"pending\",\n        \"sent_at\": null,\n        \"campaign\": 1\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "reports",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTk1NDkzLCJpYXQiOjE3NjM1Nzc0OTMsImp0aSI6IjMxM2NlNWVhOGUxMjQ2YTBhM2IzMzY4ZDQxYzgxMDQwIiwidXNlcl9pZCI6IjEifQ.1AMz4IyMV1WvRkeS-S3ELoBA2E6rinl1z6dUuSQxQMA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reports/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reports",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
