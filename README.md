@@ -179,7 +179,7 @@ It allows users to manage campaigns, view email analytics, and authenticate usin
 ### 1. Navigate to frontend folder
 
 ```bash
-cd frontend
+cd mailmetrics-frontend
 ```
 
 ### 2. Install dependencies
