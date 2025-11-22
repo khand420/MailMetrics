@@ -1,4 +1,3 @@
-Here is a **short, clean, professional README** specifically for **your Django backend** based on the settings you provided.
 
 ---
 
@@ -144,4 +143,3 @@ Your backend is fully configured for JWT auth, async tasks, and API usage for th
 
 ---
 
-If you want, I can also write the **short README for the frontend**.
