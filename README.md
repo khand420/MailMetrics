@@ -30,7 +30,7 @@ It handles campaign management, email processing, JWT authentication, background
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/khand420/MailMetrics
+git clone https://github.com/khand420/MailMetrics.git
 cd backend
 ```
 
