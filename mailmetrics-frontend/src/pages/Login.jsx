@@ -1,41 +1,48 @@
 import { useState } from "react";
 import { login } from "../api/authApi";
+import "./login.css"; // Create this file
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const submit = async (e) => {
     e.preventDefault();
+    setError("");
 
     try {
       await login(username, password);
       window.location.href = "/dashboard";
     } catch (err) {
-      alert("Invalid credentials");
+      setError("Invalid username or password");
     }
   };
 
   return (
-    <form onSubmit={submit} className="login-form">
-      <h2>Login</h2>
+    <div className="login-container">
+      <form className="login-box" onSubmit={submit}>
+        <h2>Login</h2>
 
-      <input
-        placeholder="Username"
-        onChange={(e) => setUsername(e.target.value)}
-      />
+        {error && <p className="error">{error}</p>}
 
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
+        <input
+          type="text"
+          placeholder="Username"
+          onChange={(e) => setUsername(e.target.value)}
+        />
 
-      <button>Login</button>
-    </form>
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button>Login</button>
+      </form>
+    </div>
   );
 }
-
 
 
 // import { useState } from "react";
